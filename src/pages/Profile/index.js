@@ -97,10 +97,15 @@ export default function Profile() {
   }
 
 
+  // const getFileLocalPath = response => {
+  //   const { path, uri } = response;
+  //   return Platform.OS === 'android' ? path : uri;
+  // }
+
   const getFileLocalPath = response => {
     const { path, uri } = response;
-    return Platform.OS === 'android' ? path : uri;
-  }
+    return uri;
+  };
 
   const uploadFileFirebase = async response => {
     const fileSource = getFileLocalPath(response);

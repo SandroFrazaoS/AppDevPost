@@ -5,7 +5,7 @@ import PostsList from '../../components/PostsList';
 
 import { AuthContext } from '../../contexts/auth';
 
-import { View, Text, ActivityIndicator} from 'react-native';
+import { View, ActivityIndicator} from 'react-native';
 import { Container, ListPosts } from './styles';
 
 export default function PostsUser({ route }) {
